@@ -1,3 +1,3 @@
-# Magenerds_GermanLaw
+# bayer_AustrianLaw
 
-Documentation: http://doc.magenerds.com/germanlaw/
+Documentation: - not available yet -

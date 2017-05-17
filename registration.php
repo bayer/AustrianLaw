@@ -8,15 +8,15 @@
  */
 
 /**
- * @category   Magenerds
- * @package    Magenerds_GermanLaw
+ * @category   bayer
+ * @package    bayer_AustrianLaw
  * @subpackage Module
- * @copyright  Copyright (c) 2016 TechDivision GmbH (http://www.techdivision.com)
- * @link       http://www.techdivision.com/
+ * @copyright  Copyright (c) 2017 Daniel Reichhard
  * @author     Florian Sydekum <f.sydekum@techdivision.com>
+ * @author     Daniel Reichhard <daniel.reichhard@gmail.com>
  */
 \Magento\Framework\Component\ComponentRegistrar::register(
     \Magento\Framework\Component\ComponentRegistrar::MODULE,
-    'Magenerds_GermanLaw',
+    'bayer_AustrianLaw',
     __DIR__
 );

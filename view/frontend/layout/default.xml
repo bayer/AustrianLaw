@@ -9,18 +9,18 @@
  */
 
 /**
- * @category   Magenerds
- * @package    Magenerds_GermanLaw
- * @subpackage view
+ * @category   bayer
+ * @package    bayer_AustrianLaw
+ * @subpackage Module
+ * @copyright  Copyright (c) 2017 Daniel Reichhard
  * @author     Florian Sydekum <f.sydekum@techdivision.com>
- * @copyright  Copyright (c) 2016 TechDivision GmbH (http://www.techdivision.com)
- * @link       http://www.techdivision.com/
+ * @author     Daniel Reichhard <daniel.reichhard@gmail.com>
  */
  -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="page.bottom">
-            <block after="-" class="Magenerds\GermanLaw\Block\AfterPrice" name="footer_after" as="footer.after" template="Magenerds_GermanLaw::price/footer_after.phtml" ifconfig="germanlaw/price/asterisk"/>
+            <block after="-" class="bayer\AustrianLaw\Block\AfterPrice" name="footer_after" as="footer.after" template="bayer_AustrianLaw::price/footer_after.phtml" ifconfig="austrianlaw/price/asterisk"/>
         </referenceContainer>
     </body>
 </page>

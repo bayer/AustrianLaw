@@ -8,14 +8,14 @@
  */
 
 /**
- * @category   Magenerds
- * @package    Magenerds_GermanLaw
- * @subpackage Setup
- * @copyright  Copyright (c) 2016 TechDivision GmbH (http://www.techdivision.com)
- * @link       http://www.techdivision.com/
+ * @category   bayer
+ * @package    bayer_AustrianLaw
+ * @subpackage Module
+ * @copyright  Copyright (c) 2017 Daniel Reichhard
  * @author     Florian Sydekum <f.sydekum@techdivision.com>
+ * @author     Daniel Reichhard <daniel.reichhard@gmail.com>
  */
-namespace Magenerds\GermanLaw\Setup;
+namespace bayer\AustrianLaw\Setup;
 
 use Magento\Framework\Setup\UpgradeDataInterface;
 use Magento\Framework\Setup\ModuleContextInterface;
@@ -25,7 +25,7 @@ use Magento\CheckoutAgreements\Api\Data\AgreementInterface;
 
 /**
  * Class UpgradeData
- * @package Magenerds\GermanLaw\Setup
+ * @package bayer\AustrianLaw\Setup
  */
 class UpgradeData implements UpgradeDataInterface
 {
@@ -59,13 +59,13 @@ class UpgradeData implements UpgradeDataInterface
      *
      * @param \Magento\CheckoutAgreements\Api\CheckoutAgreementsRepositoryInterface $repositoryInterface
      * @param \Magento\CheckoutAgreements\Api\Data\AgreementInterface $agreement
-     * @param \Magenerds\GermanLaw\Setup\CmsInstaller $cmsInstaller
+     * @param \bayer\AustrianLaw\Setup\CmsInstaller $cmsInstaller
      * @param \Magento\Framework\Setup\SampleData\Executor $executor
      */
     public function __construct(
         \Magento\CheckoutAgreements\Api\CheckoutAgreementsRepositoryInterface $repositoryInterface,
         \Magento\CheckoutAgreements\Api\Data\AgreementInterface $agreement,
-        \Magenerds\GermanLaw\Setup\CmsInstaller $cmsInstaller,
+        \bayer\AustrianLaw\Setup\CmsInstaller $cmsInstaller,
         \Magento\Framework\Setup\SampleData\Executor $executor,
         \Magento\Framework\App\Config\ConfigResource\ConfigInterface $configInterface
     ){

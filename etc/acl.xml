@@ -9,12 +9,12 @@
  */
 
 /**
- * @category   Magenerds
- * @package    Magenerds_GermanLaw
- * @subpackage etc
+ * @category   bayer
+ * @package    bayer_AustrianLaw
+ * @subpackage Module
+ * @copyright  Copyright (c) 2017 Daniel Reichhard
  * @author     Florian Sydekum <f.sydekum@techdivision.com>
- * @copyright  Copyright (c) 2016 TechDivision GmbH (http://www.techdivision.com)
- * @link       http://www.techdivision.com/
+ * @author     Daniel Reichhard <daniel.reichhard@gmail.com>
  */
  -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
@@ -24,7 +24,7 @@
                 <resource id="Magento_Backend::stores">
                     <resource id="Magento_Backend::stores_settings">
                         <resource id="Magento_Config::config">
-                            <resource id="Magenerds_GermanLaw::config_germanlaw" title="Magenerds GermanLaw" sortOrder="10"/>
+                            <resource id="bayer_AustrianLaw::config_austrianlaw" title="bayer AustrianLaw" sortOrder="10"/>
                         </resource>
                     </resource>
                 </resource>

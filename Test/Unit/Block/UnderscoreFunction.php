@@ -8,14 +8,14 @@
  */
 
 /**
- * @category   Magenerds
- * @package    Magenerds_GermanLaw
- * @subpackage Test
- * @copyright  Copyright (c) 2016 TechDivision GmbH (http://www.techdivision.com)
- * @link       http://www.techdivision.com/
- * @author     Bernhard Wick <b.wick@techdivision.com>
+ * @category   bayer
+ * @package    bayer_AustrianLaw
+ * @subpackage Module
+ * @copyright  Copyright (c) 2017 Daniel Reichhard
+ * @author     Florian Sydekum <f.sydekum@techdivision.com>
+ * @author     Daniel Reichhard <daniel.reichhard@gmail.com>
  */
-namespace Magenerds\GermanLaw\Block;
+namespace bayer\AustrianLaw\Block;
 
 /**
  * Function to mock the Magento __() function for this namespace

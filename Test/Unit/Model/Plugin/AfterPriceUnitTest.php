@@ -8,23 +8,23 @@
  */
 
 /**
- * @category   Magenerds
- * @package    Magenerds_GermanLaw
- * @subpackage Test
- * @copyright  Copyright (c) 2016 TechDivision GmbH (http://www.techdivision.com)
- * @link       http://www.techdivision.com/
- * @author     Bernhard Wick <b.wick@techdivision.com>
+ * @category   bayer
+ * @package    bayer_AustrianLaw
+ * @subpackage Module
+ * @copyright  Copyright (c) 2017 Daniel Reichhard
+ * @author     Florian Sydekum <f.sydekum@techdivision.com>
+ * @author     Daniel Reichhard <daniel.reichhard@gmail.com>
  */
-namespace Magenerds\GermanLaw\Test\Unit\Model\Plugin;
+namespace bayer\AustrianLaw\Test\Unit\Model\Plugin;
 
-use Magenerds\GermanLaw\Model\Plugin\AfterPrice;
+use bayer\AustrianLaw\Model\Plugin\AfterPrice;
 use Magento\Framework\Pricing\Render;
 use Magento\Framework\View\Element\BlockInterface;
 use Magento\Framework\View\LayoutInterface;
 
 /**
  * Class AfterPriceUnitTest
- * @package Magenerds\GermanLaw\Test
+ * @package bayer\AustrianLaw\Test
  */
 class AfterPriceUnitTest extends \PHPUnit_Framework_TestCase
 {
@@ -32,7 +32,7 @@ class AfterPriceUnitTest extends \PHPUnit_Framework_TestCase
     /**
      * The class instance to test
      *
-     * @var \Magenerds\GermanLaw\Model\Plugin\AfterPrice $_testInstance
+     * @var \bayer\AustrianLaw\Model\Plugin\AfterPrice $_testInstance
      */
     protected $_testInstance;
 

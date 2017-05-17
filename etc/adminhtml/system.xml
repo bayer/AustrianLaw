@@ -9,23 +9,23 @@
  */
 
 /**
- * @category   Magenerds
- * @package    Magenerds_GermanLaw
- * @subpackage etc
+ * @category   bayer
+ * @package    bayer_AustrianLaw
+ * @subpackage Module
+ * @copyright  Copyright (c) 2017 Daniel Reichhard
  * @author     Florian Sydekum <f.sydekum@techdivision.com>
- * @copyright  Copyright (c) 2016 TechDivision GmbH (http://www.techdivision.com)
- * @link       http://www.techdivision.com/
+ * @author     Daniel Reichhard <daniel.reichhard@gmail.com>
  */
  -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
-        <tab id="Magenerds" translate="label" sortOrder="1000">
-            <label>Magenerds</label>
+        <tab id="bayer" translate="label" sortOrder="1000">
+            <label>bayer</label>
         </tab>
-        <section id="germanlaw" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
-            <label>GermanLaw</label>
-            <tab>Magenerds</tab>
-            <resource>Magenerds_GermanLaw::config_germanlaw</resource>
+        <section id="austrianlaw" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>AustrianLaw</label>
+            <tab>bayer</tab>
+            <resource>bayer_AustrianLaw::config_austrianlaw</resource>
             <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>General</label>
                 <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">

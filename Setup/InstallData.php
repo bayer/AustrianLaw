@@ -8,14 +8,14 @@
  */
 
 /**
- * @category   Magenerds
- * @package    Magenerds_GermanLaw
- * @subpackage Setup
- * @copyright  Copyright (c) 2016 TechDivision GmbH (http://www.techdivision.com)
- * @link       http://www.techdivision.com/
+ * @category   bayer
+ * @package    bayer_AustrianLaw
+ * @subpackage Module
+ * @copyright  Copyright (c) 2017 Daniel Reichhard
  * @author     Florian Sydekum <f.sydekum@techdivision.com>
+ * @author     Daniel Reichhard <daniel.reichhard@gmail.com>
  */
-namespace Magenerds\GermanLaw\Setup;
+namespace bayer\AustrianLaw\Setup;
 
 use Magento\Framework\Setup\InstallDataInterface;
 use Magento\Framework\Setup\ModuleContextInterface;
@@ -25,7 +25,7 @@ use Magento\CheckoutAgreements\Api\Data\AgreementInterface;
 
 /**
  * Class InstallData
- * @package Magenerds\GermanLaw\Setup
+ * @package bayer\AustrianLaw\Setup
  */
 class InstallData implements InstallDataInterface
 {
@@ -40,12 +40,12 @@ class InstallData implements InstallDataInterface
     protected $_executor;
 
     /**
-     * @var \Magenerds\GermanLaw\Setup\CmsInstaller
+     * @var \bayer\AustrianLaw\Setup\CmsInstaller
      */
     protected $_cmsInstaller;
 
     /**
-     * @var \Magenerds\GermanLaw\Setup\TaxInstaller
+     * @var \bayer\AustrianLaw\Setup\TaxInstaller
      */
     protected $_taxInstaller;
 
@@ -54,14 +54,14 @@ class InstallData implements InstallDataInterface
      *
      * @param \Magento\Framework\App\Config\ConfigResource\ConfigInterface $configInterface
      * @param \Magento\Framework\Setup\SampleData\Executor $executor
-     * @param \Magenerds\GermanLaw\Setup\CmsInstaller $cmsInstaller
-     * @param \Magenerds\GermanLaw\Setup\TaxInstaller $taxInstaller
+     * @param \bayer\AustrianLaw\Setup\CmsInstaller $cmsInstaller
+     * @param \bayer\AustrianLaw\Setup\TaxInstaller $taxInstaller
      */
     public function __construct(
         \Magento\Framework\App\Config\ConfigResource\ConfigInterface $configInterface,
         \Magento\Framework\Setup\SampleData\Executor $executor,
-        \Magenerds\GermanLaw\Setup\CmsInstaller $cmsInstaller,
-        \Magenerds\GermanLaw\Setup\TaxInstaller $taxInstaller
+        \bayer\AustrianLaw\Setup\CmsInstaller $cmsInstaller,
+        \bayer\AustrianLaw\Setup\TaxInstaller $taxInstaller
     ){
         $this->_configInterface = $configInterface;
         $this->_executor = $executor;
@@ -105,7 +105,7 @@ class InstallData implements InstallDataInterface
         $this->_configInterface->saveConfig('checkout/options/enable_agreements', 1, ScopeConfigInterface::SCOPE_TYPE_DEFAULT, 0);
         $this->_configInterface->saveConfig('shipping/origin/country_id', 'DE', ScopeConfigInterface::SCOPE_TYPE_DEFAULT, 0);
         $this->_configInterface->saveConfig('shipping/origin/postcode', '', ScopeConfigInterface::SCOPE_TYPE_DEFAULT, 0);
-        $this->_configInterface->saveConfig('germanlaw/price/shipping_page', 'versandkosten', ScopeConfigInterface::SCOPE_TYPE_DEFAULT, 0);
+        $this->_configInterface->saveConfig('austrianlaw/price/shipping_page', 'versandkosten', ScopeConfigInterface::SCOPE_TYPE_DEFAULT, 0);
 
         $this->_executor->exec($this->_cmsInstaller);
         $this->_executor->exec($this->_taxInstaller);

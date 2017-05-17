@@ -8,20 +8,20 @@
  */
 
 /**
- * @category   Magenerds
- * @package    Magenerds_GermanLaw
- * @subpackage Setup
- * @copyright  Copyright (c) 2016 TechDivision GmbH (http://www.techdivision.com)
- * @link       http://www.techdivision.com/
+ * @category   bayer
+ * @package    bayer_AustrianLaw
+ * @subpackage Module
+ * @copyright  Copyright (c) 2017 Daniel Reichhard
  * @author     Florian Sydekum <f.sydekum@techdivision.com>
+ * @author     Daniel Reichhard <daniel.reichhard@gmail.com>
  */
-namespace Magenerds\GermanLaw\Setup;
+namespace bayer\AustrianLaw\Setup;
 
 use Magento\Framework\Setup;
 
 /**
  * Class TaxInstaller
- * @package Magenerds\GermanLaw\Setup
+ * @package bayer\AustrianLaw\Setup
  */
 class TaxInstaller implements Setup\SampleData\InstallerInterface
 {
@@ -122,7 +122,7 @@ class TaxInstaller implements Setup\SampleData\InstallerInterface
      */
     public function install()
     {
-        $fixtures = ['Magenerds_GermanLaw::fixtures/tax_rates.csv'];
+        $fixtures = ['bayer_AustrianLaw::fixtures/tax_rates.csv'];
 
         foreach ($fixtures as $fileName) {
             $fileName = $this->_fixtureManager->getFixture($fileName);
@@ -150,7 +150,7 @@ class TaxInstaller implements Setup\SampleData\InstallerInterface
                 $this->_taxRateRepository->save($taxRate);
             }
 
-            $fixtureFile = 'Magenerds_GermanLaw::fixtures/tax_rules.csv';
+            $fixtureFile = 'bayer_AustrianLaw::fixtures/tax_rules.csv';
             $fixtureFileName = $this->_fixtureManager->getFixture($fixtureFile);
             if (!file_exists($fileName)) {
                 continue;

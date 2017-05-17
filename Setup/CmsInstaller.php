@@ -8,20 +8,20 @@
  */
 
 /**
- * @category   Magenerds
- * @package    Magenerds_GermanLaw
- * @subpackage Setup
- * @copyright  Copyright (c) 2016 TechDivision GmbH (http://www.techdivision.com)
- * @link       http://www.techdivision.com/
+ * @category   bayer
+ * @package    bayer_AustrianLaw
+ * @subpackage Module
+ * @copyright  Copyright (c) 2017 Daniel Reichhard
  * @author     Florian Sydekum <f.sydekum@techdivision.com>
+ * @author     Daniel Reichhard <daniel.reichhard@gmail.com>
  */
-namespace Magenerds\GermanLaw\Setup;
+namespace bayer\AustrianLaw\Setup;
 
 use Magento\Framework\Setup;
 
 /**
  * Class CmsInstaller
- * @package Magenerds\GermanLaw\Setup
+ * @package bayer\AustrianLaw\Setup
  */
 class CmsInstaller implements Setup\SampleData\InstallerInterface
 {
@@ -67,7 +67,7 @@ class CmsInstaller implements Setup\SampleData\InstallerInterface
      */
     public function install()
     {
-        $fixtures = ['Magenerds_GermanLaw::fixtures/pages.csv'];
+        $fixtures = ['bayer_AustrianLaw::fixtures/pages.csv'];
 
         foreach ($fixtures as $fileName) {
             $fileName = $this->_fixtureManager->getFixture($fileName);

@@ -7,19 +7,20 @@
  * http://opensource.org/licenses/osl-3.0.php
  */
 
+
 /**
- * @category   Magenerds
- * @package    Magenerds_GermanLaw
- * @subpackage Block
- * @copyright  Copyright (c) 2016 TechDivision GmbH (http://www.techdivision.com)
- * @link       http://www.techdivision.com/
+ * @category   bayer
+ * @package    bayer_AustrianLaw
+ * @subpackage Module
+ * @copyright  Copyright (c) 2017 Daniel Reichhard
  * @author     Florian Sydekum <f.sydekum@techdivision.com>
+ * @author     Daniel Reichhard <daniel.reichhard@gmail.com>
  */
-namespace Magenerds\GermanLaw\Block;
+namespace bayer\AustrianLaw\Block;
 
 /**
  * Class AfterPrice
- * @package Magenerds\GermanLaw\Block
+ * @package bayer\AustrianLaw\Block
  */
 class AfterPrice extends \Magento\Framework\View\Element\Template
 {
@@ -83,7 +84,7 @@ class AfterPrice extends \Magento\Framework\View\Element\Template
      */
     public function isAsterisk()
     {
-        return $this->_scopeConfig->getValue('germanlaw/price/asterisk');
+        return $this->_scopeConfig->getValue('austrianlaw/price/asterisk');
     }
 
     /**
@@ -94,7 +95,7 @@ class AfterPrice extends \Magento\Framework\View\Element\Template
     public function isEnabled()
     {
         return $this->_scopeConfig->getValue(
-            'germanlaw/general/enabled',
+            'austrianlaw/general/enabled',
             \Magento\Store\Model\ScopeInterface::SCOPE_STORE
         );
     }
@@ -108,7 +109,7 @@ class AfterPrice extends \Magento\Framework\View\Element\Template
     {
         /** @var $product \Magento\Catalog\Model\Product */
         $product = $this->_registry->registry('product');
-        $taxText = __($this->_scopeConfig->getValue('germanlaw/price/tax_text', \Magento\Store\Model\ScopeInterface::SCOPE_STORE));
+        $taxText = __($this->_scopeConfig->getValue('austrianlaw/price/tax_text', \Magento\Store\Model\ScopeInterface::SCOPE_STORE));
 
         $taxRate = 0;
 
@@ -147,6 +148,6 @@ class AfterPrice extends \Magento\Framework\View\Element\Template
      */
     protected function _getCmsLink()
     {
-        return $this->_urlBuilder->getUrl(null, ['_direct' => $this->_scopeConfig->getValue('germanlaw/price/shipping_page')]);
+        return $this->_urlBuilder->getUrl(null, ['_direct' => $this->_scopeConfig->getValue('austrianlaw/price/shipping_page')]);
     }
 }

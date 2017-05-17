@@ -9,23 +9,23 @@
  */
 
 /**
- * @category   Magenerds
- * @package    Magenerds_GermanLaw
- * @subpackage etc
+ * @category   bayer
+ * @package    bayer_AustrianLaw
+ * @subpackage Module
+ * @copyright  Copyright (c) 2017 Daniel Reichhard
  * @author     Florian Sydekum <f.sydekum@techdivision.com>
- * @copyright  Copyright (c) 2016 TechDivision GmbH (http://www.techdivision.com)
- * @link       http://www.techdivision.com/
+ * @author     Daniel Reichhard <daniel.reichhard@gmail.com>
  */
  -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
     <default>
-        <germanlaw>
+        <austrianlaw>
             <general>
                 <enabled>1</enabled>
             </general>
             <price>
                 <tax_text>Inkl. %s MwSt., zzgl. [Versand]</tax_text>
             </price>
-        </germanlaw>
+        </austrianlaw>
     </default>
 </config>

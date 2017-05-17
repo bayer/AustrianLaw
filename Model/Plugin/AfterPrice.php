@@ -8,18 +8,18 @@
  */
 
 /**
- * @category   Magenerds
- * @package    Magenerds_GermanLaw
- * @subpackage Model
- * @copyright  Copyright (c) 2016 TechDivision GmbH (http://www.techdivision.com)
- * @link       http://www.techdivision.com/
+ * @category   bayer
+ * @package    bayer_AustrianLaw
+ * @subpackage Module
+ * @copyright  Copyright (c) 2017 Daniel Reichhard
  * @author     Florian Sydekum <f.sydekum@techdivision.com>
+ * @author     Daniel Reichhard <daniel.reichhard@gmail.com>
  */
-namespace Magenerds\GermanLaw\Model\Plugin;
+namespace bayer\AustrianLaw\Model\Plugin;
 
 /**
  * Class AfterPrice
- * @package Magenerds\GermanLaw\Model\Plugin
+ * @package bayer\AustrianLaw\Model\Plugin
  */
 class AfterPrice
 {
@@ -69,8 +69,8 @@ class AfterPrice
     protected function _getAfterPriceHtml()
     {
         if (is_null($this->_afterPriceHtml)) {
-            $afterPriceBlock = $this->_layout->createBlock('Magenerds\GermanLaw\Block\AfterPrice', 'after_price');
-            $afterPriceBlock->setTemplate('Magenerds_GermanLaw::price/after.phtml');
+            $afterPriceBlock = $this->_layout->createBlock('bayer\AustrianLaw\Block\AfterPrice', 'after_price');
+            $afterPriceBlock->setTemplate('bayer_AustrianLaw::price/after.phtml');
             $this->_afterPriceHtml = $afterPriceBlock->toHtml();
         }
 

@@ -8,16 +8,16 @@
  */
 
 /**
- * @category   Magenerds
- * @package    Magenerds_GermanLaw
- * @subpackage Test
- * @copyright  Copyright (c) 2016 TechDivision GmbH (http://www.techdivision.com)
- * @link       http://www.techdivision.com/
- * @author     Bernhard Wick <b.wick@techdivision.com>
+ * @category   bayer
+ * @package    bayer_AustrianLaw
+ * @subpackage Module
+ * @copyright  Copyright (c) 2017 Daniel Reichhard
+ * @author     Florian Sydekum <f.sydekum@techdivision.com>
+ * @author     Daniel Reichhard <daniel.reichhard@gmail.com>
  */
-namespace Magenerds\GermanLaw\Test\Unit\Block;
+namespace bayer\AustrianLaw\Test\Unit\Block;
 
-use Magenerds\GermanLaw\Block\AfterPrice;
+use bayer\AustrianLaw\Block\AfterPrice;
 use Magento\Catalog\Model\Product;
 use Magento\Customer\Model\Session;
 use Magento\Framework\App\Config\ScopeConfigInterface;
@@ -31,7 +31,7 @@ require_once __DIR__ . DIRECTORY_SEPARATOR . 'UnderscoreFunction.php';
 
 /**
  * Class AfterPriceUnitTest
- * @package Magenerds\GermanLaw\Test
+ * @package bayer\AustrianLaw\Test
  */
 class AfterPriceUnitTest extends \PHPUnit_Framework_TestCase
 {
@@ -39,7 +39,7 @@ class AfterPriceUnitTest extends \PHPUnit_Framework_TestCase
     /**
      * The class instance to test
      *
-     * @var \Magenerds\GermanLaw\Block\AfterPrice $_testInstance
+     * @var \bayer\AustrianLaw\Block\AfterPrice $_testInstance
      */
     protected $_testInstance;
 

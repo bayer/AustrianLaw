@@ -9,7 +9,7 @@
 
 /**
  * @category   bayer
- * @package    bayer_AustrianLaw
+ * @package    Bayer_AustrianLaw
  * @subpackage Module
  * @copyright  Copyright (c) 2017 Daniel Reichhard
  * @author     Florian Sydekum <f.sydekum@techdivision.com>
@@ -122,7 +122,7 @@ class TaxInstaller implements Setup\SampleData\InstallerInterface
      */
     public function install()
     {
-        $fixtures = ['bayer_AustrianLaw::fixtures/tax_rates.csv'];
+        $fixtures = ['Bayer_AustrianLaw::fixtures/tax_rates.csv'];
 
         foreach ($fixtures as $fileName) {
             $fileName = $this->_fixtureManager->getFixture($fileName);
@@ -150,7 +150,7 @@ class TaxInstaller implements Setup\SampleData\InstallerInterface
                 $this->_taxRateRepository->save($taxRate);
             }
 
-            $fixtureFile = 'bayer_AustrianLaw::fixtures/tax_rules.csv';
+            $fixtureFile = 'Bayer_AustrianLaw::fixtures/tax_rules.csv';
             $fixtureFileName = $this->_fixtureManager->getFixture($fixtureFile);
             if (!file_exists($fileName)) {
                 continue;

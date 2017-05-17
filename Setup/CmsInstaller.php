@@ -9,7 +9,7 @@
 
 /**
  * @category   bayer
- * @package    bayer_AustrianLaw
+ * @package    Bayer_AustrianLaw
  * @subpackage Module
  * @copyright  Copyright (c) 2017 Daniel Reichhard
  * @author     Florian Sydekum <f.sydekum@techdivision.com>
@@ -67,7 +67,7 @@ class CmsInstaller implements Setup\SampleData\InstallerInterface
      */
     public function install()
     {
-        $fixtures = ['bayer_AustrianLaw::fixtures/pages.csv'];
+        $fixtures = ['Bayer_AustrianLaw::fixtures/pages.csv'];
 
         foreach ($fixtures as $fileName) {
             $fileName = $this->_fixtureManager->getFixture($fileName);

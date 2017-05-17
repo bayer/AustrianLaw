@@ -9,7 +9,7 @@
 
 /**
  * @category   bayer
- * @package    bayer_AustrianLaw
+ * @package    Bayer_AustrianLaw
  * @subpackage Module
  * @copyright  Copyright (c) 2017 Daniel Reichhard
  * @author     Florian Sydekum <f.sydekum@techdivision.com>
@@ -70,7 +70,7 @@ class AfterPrice
     {
         if (is_null($this->_afterPriceHtml)) {
             $afterPriceBlock = $this->_layout->createBlock('bayer\AustrianLaw\Block\AfterPrice', 'after_price');
-            $afterPriceBlock->setTemplate('bayer_AustrianLaw::price/after.phtml');
+            $afterPriceBlock->setTemplate('Bayer_AustrianLaw::price/after.phtml');
             $this->_afterPriceHtml = $afterPriceBlock->toHtml();
         }
 

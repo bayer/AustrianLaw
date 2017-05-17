@@ -9,7 +9,7 @@
 
 /**
  * @category   bayer
- * @package    bayer_AustrianLaw
+ * @package    Bayer_AustrianLaw
  * @subpackage Module
  * @copyright  Copyright (c) 2017 Daniel Reichhard
  * @author     Florian Sydekum <f.sydekum@techdivision.com>
@@ -17,6 +17,6 @@
  */
 \Magento\Framework\Component\ComponentRegistrar::register(
     \Magento\Framework\Component\ComponentRegistrar::MODULE,
-    'bayer_AustrianLaw',
+    'Bayer_AustrianLaw',
     __DIR__
 );

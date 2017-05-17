@@ -10,7 +10,7 @@
 
 /**
  * @category   bayer
- * @package    bayer_AustrianLaw
+ * @package    Bayer_AustrianLaw
  * @subpackage Module
  * @copyright  Copyright (c) 2017 Daniel Reichhard
  * @author     Florian Sydekum <f.sydekum@techdivision.com>
@@ -25,7 +25,7 @@
         <section id="austrianlaw" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
             <label>AustrianLaw</label>
             <tab>bayer</tab>
-            <resource>bayer_AustrianLaw::config_austrianlaw</resource>
+            <resource>Bayer_AustrianLaw::config_austrianlaw</resource>
             <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>General</label>
                 <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">

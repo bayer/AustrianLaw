@@ -10,7 +10,7 @@
 
 /**
  * @category   bayer
- * @package    bayer_AustrianLaw
+ * @package    Bayer_AustrianLaw
  * @subpackage Module
  * @copyright  Copyright (c) 2017 Daniel Reichhard
  * @author     Florian Sydekum <f.sydekum@techdivision.com>
@@ -18,7 +18,7 @@
  */
  -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
-    <module name="bayer_AustrianLaw" setup_version="1.0.4">
+    <module name="Bayer_AustrianLaw" setup_version="1.0.4">
         <sequence>
             <module name="Magento_Directory" />
             <module name="Magento_Tax" />

@@ -1,4 +1,4 @@
-# bayer_AustrianLaw
+# Bayer_AustrianLaw
 
 Adaptions to the Magento 2 default installation according to the austrian law for B2C shops (ECG, ABGB, KSchG and PrAG)
 Anpassungen der Magento 2 default Installation gemäß ECG, ABGB, KSchG und PrAG - siehe https://www.wko.at/service/innovation-technologie-digitalisierung/Leitfaden_E-Marketing_E-Commerce.pdf.
